@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Fortpolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Priyank Rana",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
