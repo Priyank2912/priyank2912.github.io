@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Responsive Fortpolio",
   "main": "index.js",
-  "homepage": "https://priyank2912.github.io/portfolio",
   "scripts": {
-    "test": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "test": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Priyank Rana",
   "license": "ISC",
