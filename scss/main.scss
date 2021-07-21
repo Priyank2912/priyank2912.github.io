@@ -48,8 +48,8 @@ header {
 }
 
 main {
-  padding: 4 rem;
-  // height: 100%;
+  padding: 4rem;
+
   min-height: calc(100vh - 60px);
 
   .icons {
@@ -84,11 +84,10 @@ main {
   .bio-image {
     grid-area: bioimage;
     margin: auto;
+    background: url("../images/pic.jpeg");
+    background-size: contain;
     border-radius: 50%;
     border: $secondary-color 3px solid;
-    background-image: url(/pic.jpeg);
-    background-size: cover;
-    margin-top: 2rem;
     width: 250px;
     height: 250px;
   }
@@ -133,6 +132,7 @@ main {
     }
   }
 }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;

@@ -37,7 +37,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.92;
+  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -71,23 +71,20 @@
 
   &-branding {
     background: $primary-color;
-    z-index: 5;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
-    opacity: 1;
+
     &.show {
       transform: translate3d(0, 0, 0);
-      opacity: 1;
     }
 
     .portrait {
-      opacity: 1;
-      background: url(../pic.jpeg);
-      background-size: cover;
       width: 250px;
       height: 250px;
-      clip: rect(0, 100px, 20px, 0);
+      opacity: 1;
+      background: url("../images/pic.jpeg");
       border-radius: 50%;
+      background-size: contain;
       border: solid 3px $secondary-color;
     }
   }
@@ -97,6 +94,7 @@
     @include easeOut;
 
     &.show {
+      // Slide in from right
       transform: translate3d(0, 0, 0);
     }
 
